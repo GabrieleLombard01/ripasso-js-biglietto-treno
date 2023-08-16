@@ -71,5 +71,19 @@ generateButton.addEventListener('click', function(){
       rateName = `Tariffa over 65`;    
   }  
 
-  
+  // Carrozza random    
+  const cab = Math.floor(Math.random() * 12) + 1;    
+
+  // PNR random    
+  const pnr = Math.floor(Math.random() * (100000 - 90000 )) + 90000; 
+
+  // Dati nel ticket    
+  ticketName.innerText = nameValue ;    
+  ticketOffer.innerText = rateName;    
+  ticketCar.innerText = cab;    
+  ticketCp.innerText = pnr;    
+  finalPrice.innerText = `€` + price.toFixed(2); 
+
+  // Cambiare display al ticket    
+  ticketSection.classList.remove(`d-none`);
 });
