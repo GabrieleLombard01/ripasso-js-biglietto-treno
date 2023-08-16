@@ -39,3 +39,21 @@ const ticketCp = document.getElementById('ticket-cp');
 const ticketOffer = document.getElementById('ticket-offer');
 const ticketCar = document.getElementById('ticket-car');
 const finalPrice = document.getElementById('final-price');
+
+// Costanti di calcolo
+const pricePerKms = 0.21;
+const minDiscount = 0.8;
+const overDiscount = 0.6;
+
+// Ascolto al click del generateButton
+generateButton.addEventListener('click', function(){
+  const nameValue = nameField.value.trim();
+  const kmsValue = parseInt(kmsField.value);
+  const ageValue = ageField.value;
+
+  //VALIDATION
+  if (!nameValue || isNaN(kmsValue) || kmsValue < 1 ) {
+    alert('Ops... Qualcosa è andato storto!');
+    return;
+  } 
+});
