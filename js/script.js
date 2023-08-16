@@ -56,4 +56,20 @@ generateButton.addEventListener('click', function(){
     alert('Ops... Qualcosa è andato storto!');
     return;
   } 
+
+  //prezzo e tariffa base    
+  let price = kmsValue * pricePerKms;    
+  let rateName = 'Tariffa Ordinaria'    
+
+  //Discount    
+  if (ageValue === `min`) {    
+      price *= minDiscount;    
+      rateName = `Tariffa minori`;    
+  }    
+  else if (ageValue === `over`) {    
+      price *= overDiscount;    
+      rateName = `Tariffa over 65`;    
+  }  
+
+  
 });
