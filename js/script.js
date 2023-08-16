@@ -31,3 +31,11 @@ const kmsField = document.getElementById('UserKm');
 const ageField = document.getElementById('UserAge');
 const generateButton = document.getElementById('confirm-button');
 const resetButton = document.getElementById('reset-button');
+
+// TICKET elements
+const ticketSection = document.getElementById('ticket-section');
+const ticketName = document.getElementById('ticket-name');
+const ticketCp = document.getElementById('ticket-cp');
+const ticketOffer = document.getElementById('ticket-offer');
+const ticketCar = document.getElementById('ticket-car');
+const finalPrice = document.getElementById('final-price');
