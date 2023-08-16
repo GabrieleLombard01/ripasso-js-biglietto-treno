@@ -1,0 +1,37 @@
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Custom properties*/
+
+/*Pseudo-classes*/
+
+/*Generics*/
+h4{
+    font-weight: 800;
+}
+button{
+    border-radius: 7px;
+    font-weight: 800;
+}
+/*Utilties*/
+.my_card{
+    border-radius: 20px;
+    background-color: rgb(221, 255, 255);
+}
+.btn_container{
+    margin: auto;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.info-box{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    background-size: contain;
+}
