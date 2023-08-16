@@ -17,6 +17,16 @@ button{
     border-radius: 7px;
     font-weight: 800;
 }
+input{
+    border: solid rgb(210, 210, 210) 2px;
+    border-radius: 6px;
+    padding: 3px;
+}
+select{
+    border: solid rgb(210, 210, 210) 2px;
+    border-radius: 6px;
+    padding: 3px;
+}
 /*Utilties*/
 .my_card{
     border-radius: 20px;
