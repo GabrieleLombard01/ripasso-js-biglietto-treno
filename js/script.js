@@ -53,7 +53,7 @@ generateButton.addEventListener('click', function(){
 
   //VALIDATION
   if (!nameValue || isNaN(kmsValue) || kmsValue < 1 ) {
-    alert('Ops... Qualcosa è andato storto!');
+    alert('Ricontrolla i campi');
     return;
   } 
 
@@ -86,4 +86,11 @@ generateButton.addEventListener('click', function(){
 
   // Cambiare display al ticket    
   ticketSection.classList.remove(`d-none`);
+});
+
+// Ascolto al click del resetButton
+resetButton.addEventListener('click', function(){
+  nameField.value = '';
+  kmsField.value = '10';
+  ageField.value = '';
 });
